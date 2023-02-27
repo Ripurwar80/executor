@@ -1,0 +1,9 @@
+scenarios:
+  blazedemo:
+    headers:
+      Upgrade-Insecure-Requests: '1'
+    retrieve-resources: false
+    requests:
+      - url: https://fico.com/
+        method: GET
+        label: Fico site test

@@ -1,0 +1,11 @@
+execution:
+  - executor: jmeter
+    scenario: blazedemo
+    concurrency:
+      local: 50
+    hold-for: 30s
+    ramp-up: 10s
+reporting:
+  - module: final-stats
+    summary: true
+    dump-csv: stats1.csv
