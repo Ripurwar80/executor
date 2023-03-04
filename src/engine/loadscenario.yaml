@@ -1,25 +1,11 @@
-scenarios:
-  blazedemo:
-    data-sources:
-      - path: ./param.csv
-        delimiter: ', '
-        variable-names: fromPort, toPort
-    headers:
-      Upgrade-Insecure-Requests: '1'
-    retrieve-resources: false
-    requests:
-      - url: https://blazedemo.com/
-        method: GET
-        label: Welcome Page
-      - url: http://blazedemo.com/reserve.php'
-        method: POST
-        body:
-          fromPort: ${fromPort}
-          toPort: ${toPort}
-        label: Reserve Page
-      - url: http://blazedemo.com/purchase.php'
-        method: GET
-        label: Purchase Page
-      - url: http://blazedemo.com/confirmation.php
-        method: GET
-        label: Confirmation Page
+status: OK
+data:
+  scenarios:
+    blazedemo:
+      headers:
+        Upgrade-Insecure-Requests: '1'
+      retrieve-resources: false
+      requests:
+        - url: https://fico.com/
+          method: GET
+          label: Fico site test for load

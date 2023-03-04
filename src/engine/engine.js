@@ -8,7 +8,7 @@ const startExecution = (req,res) => {
                 res.send({status: "FAILED", data: "execution failed"});
                 return
             }
-            res.send({status: "OK", data: "execution has been started"});
+            res.send({status: "OK", data: "execution has been Completed"});
             console.log(`stdout: ${stdout}`);
             console.error(`stderr: ${stderr}`);
 

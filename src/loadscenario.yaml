@@ -6,4 +6,10 @@ scenarios:
     requests:
       - url: https://fico.com/
         method: GET
-        label: Fico site test
+        label: Homepage
+      - url: https://www.fico.com/en/contact-us
+        method: GET
+        label: Contact us page-
+      - url: https://www.fico.com/en/contact-us
+        method: GET
+        label: Contact us page1

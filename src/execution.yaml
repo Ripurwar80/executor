@@ -3,8 +3,8 @@ execution:
     scenario: blazedemo
     concurrency:
       local: 50
-    hold-for: 30s
-    ramp-up: 10s
+    hold-for: 10s
+    ramp-up: 1s
 reporting:
   - module: final-stats
     summary: true
