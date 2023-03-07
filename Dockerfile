@@ -7,6 +7,8 @@ WORKDIR /
 # RUN yum install python3 py3-pip gcc openjdk11
 # RUN apk add python3 default-jre-headless python3-tk python3-pip python3-dev libxml2-dev libxslt-dev zlib1g-dev net-tools
 # RUN pip3 install --upgrade wheel setuptools Cython cryptography fuzzyset lxml numpy psutil cffi python-levenshtein
+RUN apt update
+RUN apt install default-jdk default-jre -y
 RUN pip3 install cython bzt
 RUN pip3 freeze 
 
